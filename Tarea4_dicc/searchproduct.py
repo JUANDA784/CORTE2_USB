@@ -6,8 +6,6 @@ def busqueda_dicc(dicc, valores):
         
         if product == 'salir':
             break 
-        elif product not in dicc:
-            print('No se encuentra ese producto')
         elif product in dicc:
             valores = dicc[product] 
             print(f'{valores[0]} - {valores[1]} - {valores[2]}')
@@ -16,4 +14,4 @@ def busqueda_dicc(dicc, valores):
             print(f'IVA = {iva}')
             print(f'El valor neto o precio sin IVA del producto es = {valor_neto} $ pesos colombianos')
         else:
-            print('hello')
+            print('No se encuentra el producto')
